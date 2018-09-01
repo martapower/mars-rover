@@ -1,0 +1,36 @@
+{
+  "name": "danielas-project",
+  "version": "1.0.0",
+  "description": "This is a test",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015 src/main.js -o build/main.bundle.js",
+    "start": "http-server",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.5.0",
+    "http-server": "^0.11.1",
+    "jest": "^23.5.0",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  }
+}
