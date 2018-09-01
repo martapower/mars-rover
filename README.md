@@ -1,4 +1,4 @@
-# Daniela's project
+# Mars Rover
 
 ## Install the project
 
